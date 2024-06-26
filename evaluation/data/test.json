@@ -1,0 +1,439 @@
+{
+  "queries": [
+    {
+      "query": "how can I get in touch regarding payment issues?",
+      "response": "for inquiries about payments, email income.office@stir.ac.uk or call +44 (0) 1786 467123",
+      
+      "similar_queries": {
+        "1": {
+          "query": "how do i contact the finance department about payment problems?",
+          "bot_response": "for inquiries about payment problems, you can contact the finance department by emailing income.office@stir.ac.uk or calling +44 (0) 1786 467123.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=1.0, recall=0.6666666666666666, fmeasure=0.8)",
+                        "rouge2": "Score(precision=0.9333333333333333, recall=0.6086956521739131, fmeasure=0.7368421052631579)",
+                        "rougeL": "Score(precision=1.0, recall=0.6666666666666666, fmeasure=0.8)",
+                        "rougeLsum": "Score(precision=1.0, recall=0.6666666666666666, fmeasure=0.8)"},
+              "meteor": 0.9471,
+              "bert_score": {"BERTScore Precision": 0.9620,
+                             "BERTScore Recall": 0.9861,
+                             "BERTScore F1": 0.9739},
+              "bleu_score": 19.32,
+              "response_time": 1.7882
+            }
+        },
+        "2": {
+          "query": "who should i email for questions about payment discrepancies?",
+          "bot_response": "For questions about payment discrepancies, you should email income.office@stir.ac.uk.",
+          "metrics": {
+            "rouge": {"rouge1": "Score(precision=0.5625, recall=0.6923076923076923, fmeasure=0.6206896551724138)",
+                      "rouge2": "Score(precision=0.4, recall=0.5, fmeasure=0.4444444444444445)",
+                      "rougeL": "Score(precision=0.5625, recall=0.6923076923076923, fmeasure=0.6206896551724138)",
+                      "rougeLsum": "Score(precision=0.5625, recall=0.6923076923076923, fmeasure=0.6206896551724138)"},
+            "meteor": 0.4518,
+            "bert_score": {"BERTScore Precision": 0.9573,
+                           "BERTScore Recall": 0.8747,
+                           "BERTScore F1": 0.9141},
+            "bleu_score": 0.00,
+            "response_time": 1.2273
+          }
+        },
+        "3": {
+          "query": "what should i do if i'm having issues with my tuition payment?",
+          "bot_response": "You need to contact the student finance office as soon as possible on income.office@stir.ac.uk or +44 (0) 1786 467123.",
+          "metrics": {
+            "rouge": {"rouge1": "Score(precision=0.625, recall=0.43478260869565216, fmeasure=0.5128205128205128)",
+                      "rouge2": "Score(precision=0.5333333333333333, recall=0.36363636363636365, fmeasure=0.43243243243243246)",
+                      "rougeL": "Score(precision=0.625, recall=0.43478260869565216, fmeasure=0.5128205128205128)",
+                      "rougeLsum": "Score(precision=0.625, recall=0.43478260869565216, fmeasure=0.5128205128205128)"},
+            "meteor": 0.5627,
+            "bert_score": {"BERTScore Precision": 0.9363,
+                           "BERTScore Recall": 0.9553,
+                           "BERTScore F1": 0.9457},
+            "bleu_score": 15.07,
+            "response_time": 2.3038
+          }
+        },
+        "4": {
+          "query": "is there a phone number for payment-related inquiries?",
+          "bot_response": "Yes, for inquiries about payments, you can call +44 (0) 1786 467123",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.5625, recall=0.75, fmeasure=0.6428571428571429)",
+              "rouge2": "Score(precision=0.4666666666666667, recall=0.6363636363636364, fmeasure=0.5384615384615385)",
+              "rougeL": "Score(precision=0.5625, recall=0.75, fmeasure=0.6428571428571429)",
+              "rougeLsum": "Score(precision=0.5625, recall=0.75, fmeasure=0.6428571428571429)"},
+              "meteor": 0.7084,
+              "bert_score": {"BERTScore Precision": 0.9488,
+              "BERTScore Recall": 0.9076,
+              "BERTScore F1": 0.9278},
+              "bleu_score": 53.11,
+              "response_time": 2.1026
+            }
+        },
+        "5": {
+          "query": "how can i resolve issues with my student account payments?",
+          "bot_response": "You need to contact the student finance office as soon as possible on income.office@stir.ac.uk or +44 (0) 1786 467123.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.625, recall=0.43478260869565216, fmeasure=0.5128205128205128)",
+              "rouge2": "Score(precision=0.5333333333333333, recall=0.36363636363636365, fmeasure=0.43243243243243246)",
+              "rougeL": "Score(precision=0.625, recall=0.43478260869565216, fmeasure=0.5128205128205128)",
+              "rougeLsum": "Score(precision=0.625, recall=0.43478260869565216, fmeasure=0.5128205128205128)"},
+              "meteor": 0.5627,
+              "bert_score": {"BERTScore Precision": 0.9363,
+              "BERTScore Recall": 0.9553,
+              "BERTScore F1": 0.9457},
+              "bleu_score": 15.07,
+              "response_time": 1.5993
+            }
+        }
+      }
+    },
+    {
+      "query": "How can I reach the communications department?",
+      "response": "to contact the communication team, email communications@stir.ac.uk or call +44 (0) 1786 466687",
+      
+      "similar_queries": {
+        "1": {
+          "query": "who can i contact for media inquiries?",
+          "bot_response": "i don't know.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rouge2": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeL": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeLsum": "Score(precision=0.0, recall=0.0, fmeasure=0.0)"},
+              "meteor": 0.0000,
+              "bert_score": {"BERTScore Precision": 0.8102,
+              "BERTScore Recall": 0.7539,
+              "BERTScore F1": 0.7810},
+              "bleu_score": 0.00,
+              "response_time": 1.7727
+            }
+        },
+        "2": {
+          "query": "how do i get in touch with the pr team?",
+          "bot_response": "I don't know.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rouge2": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeL": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeLsum": "Score(precision=0.0, recall=0.0, fmeasure=0.0)"},
+              "meteor": 0.0000,
+              "bert_score": {"BERTScore Precision": 0.8102,
+              "BERTScore Recall": 0.7539,
+              "BERTScore F1": 0.7810},
+              "bleu_score": 0.00,
+              "response_time": 1.5631
+            }
+        },
+        "3": {
+          "query": "what's the email address for communication-related queries?",
+          "bot_response": "I don't know.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rouge2": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeL": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeLsum": "Score(precision=0.0, recall=0.0, fmeasure=0.0)"},
+              "meteor": 0.0000,
+              "bert_score": {"BERTScore Precision": 0.8102,
+              "BERTScore Recall": 0.7544,
+              "BERTScore F1": 0.7805},
+              "bleu_score": 0.00,
+              "response_time": 1.4260
+            }
+        },
+        "4": {
+          "query": "who handles public relations at the university?",
+          "bot_response": "I don't know.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rouge2": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeL": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeLsum": "Score(precision=0.0, recall=0.0, fmeasure=0.0)"},
+              "meteor": 0.0000,
+              "bert_score": {"BERTScore Precision": 0.8084,
+              "BERTScore Recall": 0.7544,
+              "BERTScore F1": 0.7805},
+              "bleu_score": 0.00,
+              "response_time": 1.5114
+            }
+        },
+        "5": {
+          "query": "is there a contact number for the communications office?",
+          "bot_response": "Yes, to contact the communication team, you can call +44 (0) 1786 466687",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.625, recall=0.7692307692307693, fmeasure=0.6896551724137931)",
+              "rouge2": "Score(precision=0.5333333333333333, recall=0.6666666666666666, fmeasure=0.5925925925925926)",
+              "rougeL": "Score(precision=0.625, recall=0.7692307692307693, fmeasure=0.6896551724137931)",
+              "rougeLsum": "Score(precision=0.625, recall=0.7692307692307693, fmeasure=0.6896551724137931)"},
+              "meteor": 0.7249,
+              "bert_score": {"BERTScore Precision": 0.9490,
+              "BERTScore Recall": 0.9130,
+              "BERTScore F1": 0.9307},
+              "bleu_score": 57.84,
+              "response_time": 1.6077
+            }
+        }
+      }
+    },
+    {
+      "query": "who can help with worldpay payment issues?",
+      "response": "if you are having problems using worldpay, please contact +44 (0) 1786 467123 or income.office@stir.ac.uk, to arrange another method of payment.",
+      
+      "similar_queries": {
+        "1": {
+          "query": "what do i do if i'm experiencing problems with worldpay?",
+          "bot_response": "If you are having problems using Worldpay, please contact +44 (0) 1786 467123 or income.office@stir.ac.uk to arrange another method of payment",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rouge2": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeL": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeLsum": "Score(precision=1.0, recall=1.0, fmeasure=1.0)"},
+              "meteor": 0.9335,
+              "bert_score": {"BERTScore Precision": 0.9954,
+              "BERTScore Recall": 0.9884,
+              "BERTScore F1": 0.9919},
+              "bleu_score": 67.12,
+              "response_time": 1.8174
+            }
+        },
+        "2": {
+          "query": "who should i contact if my card is not accepted by worldpay?",
+          "bot_response": "If you are having problems using Worldpay and your card is not being accepted, please contact +44 (0) 1786 467123 or income.office@stir.ac.uk to arrange another method of payment",
+          "metrics": {
+              "rouge": {"rouge1": " Score(precision=1.0, recall=0.78125, fmeasure=0.8771929824561403)",
+              "rouge2": "Score(precision=0.9583333333333334, recall=0.7419354838709677, fmeasure=0.8363636363636364)",
+              "rougeL": "Score(precision=1.0, recall=0.78125, fmeasure=0.8771929824561403)",
+              "rougeLsum": "Score(precision=1.0, recall=0.78125, fmeasure=0.8771929824561403)"},
+              "meteor": 0.9106,
+              "bert_score": {"BERTScore Precision": 0.9690,
+              "BERTScore Recall": 0.9839,
+              "BERTScore F1": 0.9764},
+              "bleu_score": 45.44,
+              "response_time": 1.8092
+            }
+        },
+        "3": {
+          "query": "how can i get assistance with worldpay payment errors?",
+          "bot_response": "if you are having problems using worldpay, please contact +44 (0) 1786 467123 or income.office@stir.ac.uk, to arrange another method of payment.",
+          "metrics": {
+              "rouge": {"rouge1": " Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rouge2": " Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeL": " Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeLsum": " Score(precision=1.0, recall=1.0, fmeasure=1.0)"},
+              "meteor": 1.0000,
+              "bert_score": {"BERTScore Precision": 1.0000,
+              "BERTScore Recall": 1.0000,
+              "BERTScore F1": 1.0000},
+              "bleu_score": 100.00,
+              "response_time": 1.7052
+            }
+        },
+        "4": {
+          "query": "is there a support number for worldpay payment issues?",
+          "bot_response": "I don't know.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rouge2": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeL": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeLsum": "Score(precision=0.0, recall=0.0, fmeasure=0.0)"},
+              "meteor": 0.0195,
+              "bert_score": {"BERTScore Precision": 0.8168,
+              "BERTScore Recall": 0.7828,
+              "BERTScore F1": 0.7995},
+              "bleu_score": 0.00,
+              "response_time": 1.2390
+            }
+        },
+        "5": {
+          "query": "who handles payment gateway problems with worldpay?",
+          "bot_response": "If you are having problems using Worldpay, please contact +44 (0) 1786 467123 or income.office@stir.ac.uk, to arrange another method of payment.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rouge2": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeL": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeLsum": "Score(precision=1.0, recall=1.0, fmeasure=1.0)"},
+              "meteor": 1.0000,
+              "bert_score": {"BERTScore Precision": 0.9958,
+              "BERTScore Recall": 0.9949,
+              "BERTScore F1": 0.9954},
+              "bleu_score": 100.00,
+              "response_time": 2.2191
+            }
+        }
+      }
+    },
+    {
+      "query": "which progression courses are available for postgraduate students at stirling?",
+      "response": "stirling has partnered with into university partnerships to provide preparatory courses for international postgraduate students who may not yet meet the requirements for direct entry onto a postgraduate course.",
+      
+      "similar_queries": {
+        "1": {
+          "query": "what are the preparatory courses offered for postgraduates?",
+          "bot_response": "Stirling has partnered with INTO University Partnerships to provide preparatory courses for international postgraduate students who may not yet meet the requirements for direct entry onto a postgraduate course.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rouge2": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeL": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeLsum": "Score(precision=1.0, recall=1.0, fmeasure=1.0)"},
+              "meteor": 1.0000,
+              "bert_score": {"BERTScore Precision": 0.9701,
+              "BERTScore Recall": 0.9734,
+              "BERTScore F1": 0.9718},
+              "bleu_score": 83.31,
+              "response_time": 1.6407
+            }
+        },
+        "2": {
+          "query": "are there any advancement programs for postgraduate students?",
+          "bot_response": "Stirling has partnered with INTO University Partnerships to provide preparatory courses for international postgraduate students who may not yet meet the requirements for direct entry onto a postgraduate course.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rouge2": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeL": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeLsum": "Score(precision=1.0, recall=1.0, fmeasure=1.0)"},
+              "meteor": 1.0000,
+              "bert_score": {"BERTScore Precision": 0.9701,
+              "BERTScore Recall": 0.9734,
+              "BERTScore F1": 0.9718},
+              "bleu_score": 83.31,
+              "response_time": 1.7321
+            }
+        },
+        "3": {
+          "query": "can you list the progression pathways for postgrads at stirling?",
+          "bot_response": "I don't have specific information on the details of progression pathways for postgraduates at Stirling University. It would be best to check directly with the university or visit their official website for the most up-to-date information on this topic.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.27586206896551724, recall=0.19047619047619047, fmeasure=0.22535211267605634)",
+              "rouge2": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeL": "Score(precision=0.1724137931034483, recall=0.11904761904761904, fmeasure=0.1408450704225352)",
+              "rougeLsum": "Score(precision=0.1724137931034483, recall=0.11904761904761904, fmeasure=0.1408450704225352)"},
+              "meteor": 0.1442,
+              "bert_score": {"BERTScore Precision": 0.8527,
+              "BERTScore Recall": 0.8600,
+              "BERTScore F1": 0.8563},
+              "bleu_score": 0.00,
+              "response_time": 2.0801
+            }
+        },
+        "4": {
+          "query": "what are the options for postgraduate advancement courses?",
+          "bot_response": "I don't know, would you like me to try and find the answer for you?",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.10344827586206896, recall=0.1875, fmeasure=0.13333333333333333)",
+              "rouge2": "Score(precision=0.0, recall=0.0, fmeasure=0.0)",
+              "rougeL": "Score(precision=0.10344827586206896, recall=0.1875, fmeasure=0.13333333333333333)",
+              "rougeLsum": "Score(precision=0.10344827586206896, recall=0.1875, fmeasure=0.13333333333333333)"},
+              "meteor": 0.0521,
+              "bert_score": {"BERTScore Precision": 0.8078,
+              "BERTScore Recall": 0.8158,
+              "BERTScore F1": 0.8118},
+              "bleu_score": 0.00,
+              "response_time": 1.6699
+            }
+        },
+        "5": {
+          "query": "which courses help postgraduates progress to higher levels of study?",
+          "bot_response": "Stirling has partnered with INTO University Partnerships to provide preparatory courses for international postgraduate students who may not yet meet the requirements for direct entry onto a postgraduate course. These preparatory courses help postgraduates progress to higher levels of study.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=1.0, recall=0.725, fmeasure=0.8405797101449275)",
+              "rouge2": "Score(precision=1.0, recall=0.717948717948718, fmeasure=0.835820895522388)",
+              "rougeL": "Score(precision=1.0, recall=0.725, fmeasure=0.8405797101449275)",
+              "rougeLsum": "Score(precision=1.0, recall=0.725, fmeasure=0.8405797101449275)"},
+              "meteor": 0.9577,
+              "bert_score": {"BERTScore Precision": 0.9433,
+              "BERTScore Recall": 0.9664,
+              "BERTScore F1": 0.9547},
+              "bleu_score": 59.48,
+              "response_time": 1.9311
+            }
+        }
+      }
+    },
+    {
+      "query": "How does Stirling assist its postgraduate community?",
+      "response": "stirling strives to ensure that all students can embrace life as part of its vibrant postgraduate community by offering extensive student support services.",
+      
+      "similar_queries": {
+        "1": {
+          "query": "what support services are available for postgraduates at stirling?",
+          "bot_response": "Stirling offers a variety of support services for postgraduate students, including academic support, career guidance, counseling services, disability support, and accommodation services. They also have a dedicated student support team to assist with any personal or academic issues that postgraduates may face.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.43478260869565216, recall=0.23809523809523808, fmeasure=0.30769230769230765)",
+              "rouge2": "Score(precision=0.09090909090909091, recall=0.04878048780487805, fmeasure=0.06349206349206349)",
+              "rougeL": "Score(precision=0.2608695652173913, recall=0.14285714285714285, fmeasure=0.1846153846153846)",
+              "rougeLsum": "Score(precision=0.2608695652173913, recall=0.14285714285714285, fmeasure=0.1846153846153846)"},
+              "meteor": 0.2592,
+              "bert_score": {"BERTScore Precision": 0.8859,
+              "BERTScore Recall": 0.8981,
+              "BERTScore F1": 0.8919},
+              "bleu_score": 0.00,
+              "response_time": 2.1391
+            }
+        },
+        "2": {
+          "query": "how does stirling university help postgraduate students?",
+          "bot_response": "Stirling strives to ensure that all students can embrace life as part of its vibrant postgraduate community by offering extensive student support services.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rouge2": " Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeL": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeLsum": "Score(precision=1.0, recall=1.0, fmeasure=1.0)"},
+              "meteor": 1.0000,
+              "bert_score": {"BERTScore Precision": 0.9847,
+              "BERTScore Recall": 0.9847,
+              "BERTScore F1": 0.9847},
+              "bleu_score": 100.00,
+              "response_time": 1.7328
+            }
+        },
+        "3": {
+          "query": "what resources does stirling offer for its postgrad community?",
+          "bot_response": "Stirling offers extensive student support services to ensure that all students can embrace life as part of its vibrant postgraduate community.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=0.9130434782608695, recall=1.0, fmeasure=0.9545454545454545)",
+              "rouge2": " Score(precision=0.8181818181818182, recall=0.9, fmeasure=0.8571428571428572)",
+              "rougeL": "Score(precision=0.6956521739130435, recall=0.7619047619047619, fmeasure=0.7272727272727272)",
+              "rougeLsum": "Score(precision=0.6956521739130435, recall=0.7619047619047619, fmeasure=0.7272727272727272)"},
+              "meteor": 0.9216,
+              "bert_score": {"BERTScore Precision": 0.9684,
+              "BERTScore Recall": 0.9637,
+              "BERTScore F1": 0.9660},
+              "bleu_score": 65.46,
+              "response_time": 1.4226
+            }
+        },
+        "4": {
+          "query": "can you explain the support system for postgrads at stirling?",
+          "bot_response": "Stirling strives to ensure that all students can embrace life as part of its vibrant postgraduate community by offering extensive student support services. These services may include academic support, career guidance, counseling services, and various resources to help postgraduate students succeed in their studies and personal development.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=1.0, recall=0.48936170212765956, fmeasure=0.6571428571428571)",
+              "rouge2": " Score(precision=1.0, recall=0.4782608695652174, fmeasure=0.6470588235294118)",
+              "rougeL": " Score(precision=1.0, recall=0.48936170212765956, fmeasure=0.6571428571428571)",
+              "rougeLsum": "Score(precision=1.0, recall=0.48936170212765956, fmeasure=0.6571428571428571)"},
+              "meteor": 0.8631,
+              "bert_score": {"BERTScore Precision": 0.9234,
+              "BERTScore Recall": 0.9761,
+              "BERTScore F1": 0.9490},
+              "bleu_score": 47.20,
+              "response_time": 4.2781
+            }
+        },
+        "5": {
+          "query": "what assistance is provided to postgraduate students at stirling?",
+          "bot_response": "Stirling strives to ensure that all students can embrace life as part of its vibrant postgraduate community by offering extensive student support services.",
+          "metrics": {
+              "rouge": {"rouge1": "Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rouge2": " Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeL": " Score(precision=1.0, recall=1.0, fmeasure=1.0)",
+              "rougeLsum": "Score(precision=1.0, recall=1.0, fmeasure=1.0)"},
+              "meteor": 1.0000,
+              "bert_score": {"BERTScore Precision": 0.9847,
+              "BERTScore Recall": 0.9847,
+              "BERTScore F1": 0.9847},
+              "bleu_score": 100.00,
+              "response_time": 2.2883
+            }
+        }
+      }
+    }
+  ]
+}
