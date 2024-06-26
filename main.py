@@ -23,7 +23,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 # setup logging
 setup_logger(LOG_DIR)
 
-# extraction and generation - only run once
+# extraction and processing
 run_new()
 
 # load .env VARIABLES
@@ -66,7 +66,6 @@ def load_csv_data(data_directory: str) -> Tuple[List[str], int]:
             data_list.extend(future.result())
 
     return data_list, counts
-
 
 datasets, counts = load_csv_data(DATA_DIR)
 # print(f"files loaded = {counts}")
