@@ -1,6 +1,7 @@
 [1]
 # Use a local vector database to vectorize and store embeddings once.
 # Effectively cache any computations
+# Robust evaluation for LLM
 
 [2]
 # User query refinery
