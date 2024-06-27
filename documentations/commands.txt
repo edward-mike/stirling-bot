@@ -1,6 +1,3 @@
-activate virtual-env.
-    - venv/Scripts/activate
-
 
 https://pypi.org/project/streamlit/
 StreamLit :
@@ -31,4 +28,16 @@ black :
      git push origin main
 
 
-# Github Actions - CI/CD
+# Containerize Commands
+    
+    # Build image
+        docker build -t faq_bot_image .  *
+    
+    # Run image
+        docker run -t faq_bot_image   *
+        docker run --publish 8501:8501 faq_bot_image 
+
+
+activate virtual-env.
+    - venv/Scripts/activate
+
