@@ -7,10 +7,7 @@ __pycache__/
 *.log
 
 lang.py
-
-documentations/
-
-documentations
+/lang.py
 
 # pyenv
 .python-version

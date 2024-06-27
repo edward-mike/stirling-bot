@@ -1,9 +1,13 @@
+[1]
 # Use a local vector database to vectorize and store embeddings once.
 # Effectively cache any computations
 
+[2]
 # User query refinery
 # Get User feedback after using the application
 
-# sepration of concerns: structure project properly
+[3]
+# seperation of concerns: structure project properly
 
+[4]
 # make the entire project a python package, with easy setup and configurations with existing websites.
