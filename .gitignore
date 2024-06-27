@@ -8,6 +8,10 @@ __pycache__/
 
 lang.py
 
+documentations/
+
+documentations
+
 # pyenv
 .python-version
 
