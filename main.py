@@ -14,7 +14,13 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from streamlit_chat import message
 
-from config.settings import DATA_DIR, LOG_DIR, LOGO_URL, setup_logger
+from config.settings import setup_logger
+from config.settings import (DATA_DIR, 
+                             LOG_DIR,
+                             LOGO_URL, 
+                             CHUNK_SIZE,
+                             CHUNK_OVERLAP,
+                             DOCUMENTS_RETURN_COUNT)
 from new import run_new
 from utils import time_execution
 
@@ -31,11 +37,11 @@ load_dotenv()
 
 ########################################################################
 # App configuration
-DOCUMENTS_RETURN_COUNT = 5
 ########################################################################
 
 
 # 1. Load dataset
+# @st.cache_data
 def load_csv_file(file_path: str) -> List[str]:
     try:
         loader = CSVLoader(file_path=file_path)
@@ -71,10 +77,7 @@ datasets, counts = load_csv_data(DATA_DIR)
 # print(f"files loaded = {counts}")
 
 # ########################################################################
-
-CHUNK_SIZE = 1000
-CHUNK_OVERLAP = 0
-
+# https://python.langchain.com/v0.2/docs/how_to/recursive_text_splitter/
 
 # 2. Splitting documents
 @time_execution
@@ -93,18 +96,15 @@ def document_splitter(
     )
     return texts
 
-
 texts = document_splitter(datasets)
 
 # ######################################################################
 
 
 # # 3. Creating embeddings
-#  embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
 def get_openai_embeddings():
     embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
     return embeddings
-
 
 embeddings = get_openai_embeddings()
 
@@ -113,7 +113,7 @@ embeddings = get_openai_embeddings()
 # Storing embeddings in Pinecone
 index_name = os.environ["INDEX_NAME"]
 
-
+# @st.cache_resource
 @time_execution
 def setup_pinecone_index() -> None:
 
@@ -130,7 +130,6 @@ def setup_pinecone_index() -> None:
             metric=os.environ["METRIC"],
             spec=spec,
         )
-
 
 setup_pinecone_index()
 

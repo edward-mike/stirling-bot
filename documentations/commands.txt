@@ -1,0 +1,34 @@
+activate virtual-env.
+    - venv/Scripts/activate
+
+
+https://pypi.org/project/streamlit/
+StreamLit :
+    -   streamlit run main.py
+
+https://pypi.org/project/isort/
+Isort :       
+    - isort .    
+
+https://pypi.org/project/black/
+black :
+    - black . 
+
+
+# Git, Github
+
+    # NEW
+    git init
+    git add README.md
+    git commit -m "init. commit"
+    git remote add origin [REMOTE_LINK]
+    git push -u origin main
+
+    # EXISTING
+     git add .
+     (optional) git add filename.extension
+     git commit -m "message on what changed"
+     git push origin main
+
+
+# Github Actions - CI/CD

@@ -6,8 +6,6 @@ __pycache__/
 # logging stuff
 *.log
 
-documentations/
-
 # pyenv
 .python-version
 

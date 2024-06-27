@@ -1,0 +1,13 @@
+# Data collection and preprocessing: ✔️
+
+    # 1. Web scrapping
+    # 2. Data cleaning and preprocessing
+    # 3. Use GPT to create a Question, Answer
+
+# Integrate LLM with LangChain, and the rest ✔️
+
+# Manual testing ✔️
+
+# Dockerise Project
+
+# Deploy on AWS EC2

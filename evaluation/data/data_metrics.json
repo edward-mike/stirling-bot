@@ -18,7 +18,8 @@
                              "BERTScore Recall": 0.9861,
                              "BERTScore F1": 0.9739},
               "bleu_score": 19.32,
-              "response_time": 1.7882
+              "response_time": 1.7882,
+              "latency": 0.5173
             }
         },
         "2": {
@@ -34,7 +35,8 @@
                            "BERTScore Recall": 0.8747,
                            "BERTScore F1": 0.9141},
             "bleu_score": 0.00,
-            "response_time": 1.2273
+            "response_time": 1.2273,
+            "latency": 0.4990
           }
         },
         "3": {
@@ -50,7 +52,8 @@
                            "BERTScore Recall": 0.9553,
                            "BERTScore F1": 0.9457},
             "bleu_score": 15.07,
-            "response_time": 2.3038
+            "response_time": 2.3038,
+            "latency": 0.7997
           }
         },
         "4": {
@@ -66,7 +69,8 @@
               "BERTScore Recall": 0.9076,
               "BERTScore F1": 0.9278},
               "bleu_score": 53.11,
-              "response_time": 2.1026
+              "response_time": 2.1026,
+              "latency": 0.4990
             }
         },
         "5": {
@@ -82,7 +86,8 @@
               "BERTScore Recall": 0.9553,
               "BERTScore F1": 0.9457},
               "bleu_score": 15.07,
-              "response_time": 1.5993
+              "response_time": 1.5993,
+              "latency": 0.5140
             }
         }
       }
@@ -105,7 +110,8 @@
               "BERTScore Recall": 0.7539,
               "BERTScore F1": 0.7810},
               "bleu_score": 0.00,
-              "response_time": 1.7727
+              "response_time": 1.7727,
+              "latency": 0.5107
             }
         },
         "2": {
@@ -121,7 +127,8 @@
               "BERTScore Recall": 0.7539,
               "BERTScore F1": 0.7810},
               "bleu_score": 0.00,
-              "response_time": 1.5631
+              "response_time": 1.5631,
+              "latency": 0.4197
             }
         },
         "3": {
@@ -137,7 +144,8 @@
               "BERTScore Recall": 0.7544,
               "BERTScore F1": 0.7805},
               "bleu_score": 0.00,
-              "response_time": 1.4260
+              "response_time": 1.4260,
+              "latency": 0.4963
             }
         },
         "4": {
@@ -153,7 +161,8 @@
               "BERTScore Recall": 0.7544,
               "BERTScore F1": 0.7805},
               "bleu_score": 0.00,
-              "response_time": 1.5114
+              "response_time": 1.5114,
+              "latency": 0.5240
             }
         },
         "5": {
@@ -169,7 +178,8 @@
               "BERTScore Recall": 0.9130,
               "BERTScore F1": 0.9307},
               "bleu_score": 57.84,
-              "response_time": 1.6077
+              "response_time": 1.6077,
+              "latency": 0.5214
             }
         }
       }
@@ -192,7 +202,8 @@
               "BERTScore Recall": 0.9884,
               "BERTScore F1": 0.9919},
               "bleu_score": 67.12,
-              "response_time": 1.8174
+              "response_time": 1.8174,
+              "latency": 0.4967
             }
         },
         "2": {
@@ -208,7 +219,8 @@
               "BERTScore Recall": 0.9839,
               "BERTScore F1": 0.9764},
               "bleu_score": 45.44,
-              "response_time": 1.8092
+              "response_time": 1.8092,
+              "latency": 0.5976
             }
         },
         "3": {
@@ -224,7 +236,8 @@
               "BERTScore Recall": 1.0000,
               "BERTScore F1": 1.0000},
               "bleu_score": 100.00,
-              "response_time": 1.7052
+              "response_time": 1.7052,
+              "latency": 0.5176
             }
         },
         "4": {
@@ -240,7 +253,8 @@
               "BERTScore Recall": 0.7828,
               "BERTScore F1": 0.7995},
               "bleu_score": 0.00,
-              "response_time": 1.2390
+              "response_time": 1.2390,
+              "latency": 0.5479
             }
         },
         "5": {
@@ -256,7 +270,8 @@
               "BERTScore Recall": 0.9949,
               "BERTScore F1": 0.9954},
               "bleu_score": 100.00,
-              "response_time": 2.2191
+              "response_time": 2.2191,
+              "latency": 0.5597
             }
         }
       }
@@ -279,7 +294,8 @@
               "BERTScore Recall": 0.9734,
               "BERTScore F1": 0.9718},
               "bleu_score": 83.31,
-              "response_time": 1.6407
+              "response_time": 1.6407,
+              "latency": 0.5408
             }
         },
         "2": {
@@ -295,7 +311,8 @@
               "BERTScore Recall": 0.9734,
               "BERTScore F1": 0.9718},
               "bleu_score": 83.31,
-              "response_time": 1.7321
+              "response_time": 1.7321,
+              "latency": 0.5801
             }
         },
         "3": {
@@ -311,7 +328,8 @@
               "BERTScore Recall": 0.8600,
               "BERTScore F1": 0.8563},
               "bleu_score": 0.00,
-              "response_time": 2.0801
+              "response_time": 2.0801,
+              "latency": 0.4835
             }
         },
         "4": {
@@ -327,7 +345,8 @@
               "BERTScore Recall": 0.8158,
               "BERTScore F1": 0.8118},
               "bleu_score": 0.00,
-              "response_time": 1.6699
+              "response_time": 1.6699,
+              "latency": 0.5085
             }
         },
         "5": {
@@ -343,7 +362,8 @@
               "BERTScore Recall": 0.9664,
               "BERTScore F1": 0.9547},
               "bleu_score": 59.48,
-              "response_time": 1.9311
+              "response_time": 1.9311,
+              "latency": 0.5677
             }
         }
       }
@@ -366,7 +386,8 @@
               "BERTScore Recall": 0.8981,
               "BERTScore F1": 0.8919},
               "bleu_score": 0.00,
-              "response_time": 2.1391
+              "response_time": 2.1391,
+              "latency": 0.6068
             }
         },
         "2": {
@@ -382,7 +403,8 @@
               "BERTScore Recall": 0.9847,
               "BERTScore F1": 0.9847},
               "bleu_score": 100.00,
-              "response_time": 1.7328
+              "response_time": 1.7328,
+              "latency": 0.5018
             }
         },
         "3": {
@@ -398,7 +420,8 @@
               "BERTScore Recall": 0.9637,
               "BERTScore F1": 0.9660},
               "bleu_score": 65.46,
-              "response_time": 1.4226
+              "response_time": 1.4226,
+              "latency": 0.5144
             }
         },
         "4": {
@@ -414,7 +437,8 @@
               "BERTScore Recall": 0.9761,
               "BERTScore F1": 0.9490},
               "bleu_score": 47.20,
-              "response_time": 4.2781
+              "response_time": 4.2781,
+              "latency": 0.5220
             }
         },
         "5": {
@@ -430,7 +454,8 @@
               "BERTScore Recall": 0.9847,
               "BERTScore F1": 0.9847},
               "bleu_score": 100.00,
-              "response_time": 2.2883
+              "response_time": 2.2883,
+              "latency": 0.5788
             }
         }
       }
