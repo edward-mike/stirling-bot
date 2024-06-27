@@ -178,7 +178,7 @@ def main() -> None:
             }
             
             .title .title-bot {
-                color: #88b58a !important;
+                color: #016839 !important;
             }
 
             /* Style for the sidebar */
@@ -210,6 +210,12 @@ def main() -> None:
             
             .eczjsme11 {
                 background-color: #016938 !important;
+            }
+            
+            .st-emotion-cache-6qob1r{
+                box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.14), 
+                0 3px 1px -2px rgba(0, 0, 0, 0.42), 0 1px 5px 0 rgba(0, 0, 0, 0.52);
+
             }
         
         </style>
