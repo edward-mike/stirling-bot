@@ -29,5 +29,5 @@ def run_new() -> None:
         extract_contents_for(urls)
 
     if ALLOW_QA_GENERATOR:
-        # Preprocess(clean text, structure contents, ..) files and create qa pairs
+        # Preprocess(clean text, structure contents, ..) files and create qa pairs with GPT
         preprocess_files(WEBDATA_DIR, PREDATA_DIR)

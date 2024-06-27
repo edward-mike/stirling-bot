@@ -58,9 +58,9 @@ def is_english(text: str) -> bool:
     return detect_language(text)[0] == ENGLISH
 
 
-def to_english(text: str, lang: str = ENGLISH) -> str:
+def to_english(text: str, lang: str = None) -> str:
     pass
 
 
-def from_english(text: str, lang: str = ENGLISH) -> str:
+def from_english(text: str, lang: str = None) -> str:
     pass
