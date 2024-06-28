@@ -1,5 +1,6 @@
 import logging
 import os
+from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -13,27 +14,48 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Logging configuration
 ################################################################
 
+class CustomFormatter(logging.Formatter):
+    def formatTime(self, record, datefmt=None):
+        return datetime.fromtimestamp(record.created).strftime('%b %d %I:%M:%S %p')
 
 def setup_logger(log_directory, enable_console=False):
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
 
-    # Configure logging to write to a file in the logs directory - Default.
-    log_file = os.path.join(log_directory, os.getenv("LOG_FILE"))
-    logging.basicConfig(
-        filename=log_file,
-        level=logging.INFO,
-        format="%(asctime)s - %(levelname)s - %(message)s",
-    )
+    log_file = os.path.join(log_directory, os.getenv("LOG_FILE", "default.log"))
+    
+    file_handler = logging.FileHandler(log_file)
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(CustomFormatter("%(asctime)s - %(levelname)s - %(message)s"))
 
-    # Enable logging to display on terminal
+    logging.basicConfig(level=logging.INFO, handlers=[file_handler])
+    
     if enable_console:
         console_handler = logging.StreamHandler()
         console_handler.setLevel(logging.INFO)
-        console_handler.setFormatter(
-            logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-        )
+        console_handler.setFormatter(CustomFormatter("%(asctime)s - %(levelname)s - %(message)s"))
         logging.getLogger().addHandler(console_handler)
+
+# def setup_logger(log_directory, enable_console=False):
+#     if not os.path.exists(log_directory):
+#         os.makedirs(log_directory)
+
+#     # Configure logging to write to a file in the logs directory - Default.
+#     log_file = os.path.join(log_directory, os.getenv("LOG_FILE"))
+#     logging.basicConfig(
+#         filename=log_file,
+#         level=logging.INFO,
+#         format="%(asctime)s - %(levelname)s - %(message)s",
+#     )
+
+#     # Enable logging to display on terminal
+#     if enable_console:
+#         console_handler = logging.StreamHandler()
+#         console_handler.setLevel(logging.INFO)
+#         console_handler.setFormatter(
+#             logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+#         )
+#         logging.getLogger().addHandler(console_handler)
 
 
 ################################################################
