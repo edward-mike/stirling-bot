@@ -14,11 +14,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Logging configuration
 ################################################################
 
-class CustomFormatter(logging.Formatter):
-    def formatTime(self, record, datefmt=None):
-        return datetime.fromtimestamp(record.created).strftime('%b %d %I:%M:%S %p')
 
 def setup_logger(log_directory, enable_console=False):
+    
+    class CustomFormatter(logging.Formatter):
+        def formatTime(self, record, datefmt=None):
+            return datetime.fromtimestamp(record.created).strftime('%b %d %I:%M:%S %p')
+
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
 
