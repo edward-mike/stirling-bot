@@ -5,6 +5,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from ._constants import *
+
 load_dotenv()
 
 # Build path inside the project directory
@@ -13,7 +15,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 ################################################################
 # Logging configuration
 ################################################################
-
 
 def setup_logger(log_directory, enable_console=False):
 
@@ -58,17 +59,3 @@ LOGO_URL = os.path.join(BASE_DIR, "static", "images", "logo.jpg")
 
 PDF_DOC = "files"  # documents
 LOG_DIR = "logs"
-
-################################################################
-# Paremeters for Extractions and QnA Generation
-################################################################
-ALLOW_PDF_EXTRACTION = False  # Set to True to enable PDF extraction
-ALLOW_URL_EXTRACTION = False  # Set to True to enable web content extraction
-ALLOW_QA_GENERATOR = False  # Set to True to enable QA generation from extracted data
-
-################################################################
-# https://python.langchain.com/v0.2/docs/how_to/recursive_text_splitter/
-# App config.
-CHUNK_SIZE = 1000
-CHUNK_OVERLAP = 0
-DOCUMENTS_RETURN_COUNT = 5

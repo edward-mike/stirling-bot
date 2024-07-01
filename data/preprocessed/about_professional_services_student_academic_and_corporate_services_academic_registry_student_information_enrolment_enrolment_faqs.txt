@@ -1,32 +1,32 @@
-1. where can i get support for completing online enrolment?
-you should refer to the [specific resource] for details of supported enrolment.
+1. i'm having trouble completing online enrolment what should i do?
+   - please refer to the [link] for details of supported enrolment.
 
-2. what should i do if i can't access enrolment because it is not open?
-if you think you should be enrolling now, please refer to the date in the email sent to your university address. if you believe there is an issue, please contact [specific contact information].
+2. i can't access enrolment as it is not open. what do i do?
+   - you should have been sent an email to your university address telling you when enrolment is open. however, if you think that you should be enrolling now, please contact [phone number].
 
-3. what should i do if i can't enrol due to outstanding debt?
-you need to contact the [specific department] as soon as possible on 01786 467123.
+3. i can't enrol as i have outstanding debt, what can i do?
+   - you need to contact the [phone number] as soon as possible.
 
-4. what should i do if worldpay is not accepting my card payment?
-if you are having problems using worldpay, please contact 01786 467123 to arrange another method of payment.
+4. worldpay is not accepting my card payment. what do i do?
+   - if you are having problems using worldpay, please contact [phone number] to arrange another method of payment.
 
-5. should i still enrol if i am withdrawn or on a leave of absence?
-no, do not enrol. instead, contact [specific contact information].
+5. do i still enrol if i am withdrawn or on leave of absence?
+   - do not enrol - contact [phone number].
 
-6. how do i request a change in my mode of attendance or request a leave of absence?
-you will need to email [specific email address] from your university email account, attaching any documentation to support your request.
+6. i want to change my mode of attendance or request a leave of absence.
+   - do not enrol - you will need to email [email address] from your university email account attaching any documentation to support your request.
 
 7. what does conditionally enrolled mean?
-if you have completed online enrolment but there are further steps that need to be completed for you to become fully enrolled, you will be conditional enrolled. please refer to the email detailing why your enrolment status is conditional for more information.
+   - you will be conditionally enrolled if you have completed online enrolment however there are further steps that need to be completed for you to become fully enrolled.
 
-8. when can i expect to receive my student loan?
-once you have successfully enrolled and the official start date of your program has passed, your student loan should be paid into your bank account within 3 working days. for queries regarding this, you will need to speak to the student loan company.
+8. when do i get my student loan?
+   - once you have successfully enrolled and the official start date of your programme has passed, your student loan should be paid into your bank account within 3 working days.
 
-9. where can i find timetable information?
-please refer to the [specific webpage] for information on the timetable.
+9. where can i get timetable information?
+   - please refer to the [link] webpage for information on the timetable.
 
-10. where can i get a letter to prove my enrolment?
-once you have completed enrolment, you will receive a pdf copy of your certificate of enrolment to your student email address within 24 hours. for more information on the certificate of enrolment, please refer to the webpage on [specific website].
+10. where do i get a letter to prove my enrolment?
+    - once you have completed enrolment you will a pdf copy of your certificate of enrolment to your student email address within 24 hours.
 
-11. what should i do if i am having problems logging on or need a password reset?
-please contact the information helpdesk at [specific contact information].
+11. having problems logging on or need password reset?
+    - please contact the information helpdesk at [phone number].

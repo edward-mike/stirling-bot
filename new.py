@@ -1,19 +1,10 @@
 from typing import List
 
-from config.settings import (
-    ALLOW_PDF_EXTRACTION,
-    ALLOW_QA_GENERATOR,
-    ALLOW_URL_EXTRACTION,
-    PDF_DOC,
-    PREDATA_DIR,
-    URLS_FILE,
-    WEBDATA_DIR,
-)
-from pipeline import (
-    extract_contents_for,
-    extract_text_from_pdfs_in_directory,
-    preprocess_files,
-)
+from config.settings import (ALLOW_PDF_EXTRACTION, ALLOW_QA_GENERATOR,
+                             ALLOW_URL_EXTRACTION, PDF_DOC, PREDATA_DIR,
+                             URLS_FILE, WEBDATA_DIR)
+from pipeline import (extract_contents_for,
+                      extract_text_from_pdfs_in_directory, preprocess_files)
 
 # ToDO:
 # UnicodeError when preprocessing extracted pdf files with GPT
