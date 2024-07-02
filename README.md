@@ -43,3 +43,7 @@ This project presents a user-friendly FAQ chatbot that addresses frequently aske
 ## Author
 
 - Author : [Edward Mike](https://www.linkedin.com/in/edward-mike/)
+
+## Access the Chatbot
+
+You can access the FAQ Chatbot here: [Stirling Bot](https://stirling-bot.onrender.com)
