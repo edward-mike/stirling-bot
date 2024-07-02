@@ -83,8 +83,15 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
 - **Collapsed Sidebar Screen**  
   ![Collapsed Sidebar Screen](screenshots/collapse_sidebar.png)
 
+- **LLM Evaluation output** 
+  ![LLM Evaluation output](screenshots/sample-evaluation.png)
+
 ## Author
 You can connect with me on [Linkedin](https://www.linkedin.com/in/edward-mike/)
 
 ## Acknowledgements
 To all contributors of open source and free software used in this project, thank you👏
+
+## Future Works
+- Multi-language support for all languages
+- Advanced LLM Evaluation
