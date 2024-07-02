@@ -84,9 +84,7 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
   ![Collapsed Sidebar Screen](screenshots/collapse_sidebar.png)
 
 ## Author
-
-- **Edward Mike**  
-  You can connect with me on [Linkedin](https://www.linkedin.com/in/edward-mike/)
+You can connect with me on [Linkedin](https://www.linkedin.com/in/edward-mike/)
 
 ## Acknowledgements
 To all contributors of open source and free software used in this project, thank you👏
