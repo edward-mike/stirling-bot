@@ -38,6 +38,7 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
 ## Technologies Used
 
 - **Python**: The core programming language for the entire project.
+- **Docker**: Facilitates the creation of containerized environments for consistent and reproducible deployment
 - **Beautiful Soup**: Efficiently extracts FAQ data from the university website.
 - **Requests**: Facilitates HTTP requests to web pages or APIs to fetch HTML content or other data.
 - **LangChain**: A comprehensive NLP library for text processing, document management, and chatbot development.
