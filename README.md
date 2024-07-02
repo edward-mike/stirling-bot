@@ -1,56 +1,87 @@
-# Stirling B🤖t is a Frequently Asked Questions (FAQ) ChatBot for the University of Stirling 🚀
+# Stirling B🤖t: Frequently Asked Questions (FAQ) ChatBot for the University of Stirling 🚀
 
 ## Introduction
 
-This project presents a user-friendly FAQ chatbot that addresses frequently asked questions (FAQs) related to university of stirling. It leverages web scraping techniques to gather relevant information from the university's website and utilizes powerful NLP (Natural Language Processing) tools to answer user queries in a conversational manner.
+Stirling B🤖t is a sophisticated FAQ chatbot designed to address frequently asked questions (FAQs) related to the University of Stirling. It leverages advanced web scraping techniques to gather relevant information from the university's website and utilizes powerful Natural Language Processing (NLP) tools to answer user queries in a conversational manner.
 
 ## Project Goals
 
-- Enhance user experience by providing a convenient and readily accessible way to find university-related information.
-- Demonstrate web scraping and NLP skills using Python libraries.
-- Build a Streamlit application for a user-friendly interface.
+- **Enhance User Experience**: Provide a convenient and readily accessible way to find university-related information.
+- **Showcase Technical Skills**: Demonstrate web scraping and NLP capabilities using Python libraries.
+- **Build an Interactive Interface**: Develop a Streamlit application for a seamless user experience.
 
+## Technical Work
+
+### ETL Pipeline
+
+The project implements a robust ETL (Extraction, Transformation, Loading) pipeline to ensure dynamic data handling.
+
+#### Data Collection (Extraction)
+- **Web Scraping**: Data is extracted from the [University of Stirling website](https://www.stir.ac.uk).
+- **PDF Data Extraction**: Relevant information is extracted from PDF documents.
+
+#### Data Cleaning and Preprocessing (Transformation and Loading)
+- **Data Cleaning**: Remove unnecessary spaces, HTML tags, links, etc.
+- **Data Transformation**: Use GPT to transform the data into question-answer pairs.
+- **Data Storage**: Save the generated question-answer pairs in a CSV file.
+
+### Document Chunks and Embedding
+
+- **Data Processing**: Chunk the processed CSV data and generate embeddings.
+- **Data Storage**: Load the embeddings into a vector database.
 
 ## Technologies Used
 
-- **Python**: The foundational programming language for the entire project.
-- **Beautiful Soup**: To efficiently extract FAQ data from the university website.
-- **Requests**: Used to make HTTP requests to web pages or APIs, fetching HTML content or other data.
+- **Python**: The core programming language for the entire project.
+- **Beautiful Soup**: Efficiently extracts FAQ data from the university website.
+- **Requests**: Facilitates HTTP requests to web pages or APIs to fetch HTML content or other data.
 - **LangChain**: A comprehensive NLP library for text processing, document management, and chatbot development.
 - **Pinecone**: A vector database for efficient text retrieval and search.
-- **OpenAI**: A large language model (LLM) for generating human-quality responses if additional conversational fluency is desired.
+- **OpenAI**: Utilizes a large language model (LLM) to generate human-like responses for enhanced conversational fluency.
 - **Streamlit**: A framework for creating interactive web apps to present the chatbot interface.
-- **Pandas**: A framework for data manipulation and processing.
-- **PyPDF2**: Used to read and extract text from PDF documents.
-- **Isort**: Automatically sorts imports in Python files, maintaining a consistent and organized import structure.
-- **Black**: A code formatter that enforces a consistent coding style, making the codebase more readable and maintainable.
-- **Flake8**: A linting tool that checks for compliance with Python coding standards, ensuring the code is clean and free of common errors.
-- **Rich**: A library for rich text and formatting in the terminal, which can be used to enhance the command-line interface and debugging output with more readable and visually appealing formatting.
-
-
+- **Pandas**: A powerful library for data manipulation and processing.
+- **PyPDF2**: Reads and extracts text from PDF documents.
+- **Isort**: Automatically sorts imports in Python files to maintain a consistent and organized import structure.
+- **Black**: Enforces a consistent coding style through automatic code formatting.
+- **Flake8**: Checks for compliance with Python coding standards, ensuring clean and error-free code.
+- **Rich**: Enhances the command-line interface and debugging output with rich text and formatting.
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/edward-mike/multi-language-faq-chatbot.git`
-2. Create a virtual environment (recommended) and activate it.
-3. Install dependencies: `pip install -r requirements.txt` (Create a requirements.txt file listing all required libraries)
-4. Create .env file, see .env.example to know what you need.
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/edward-mike/multi-language-faq-chatbot.git
+    ```
+2. Create a virtual environment (recommended) and activate it:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+3. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. Create a `.env` file. Refer to `.env.example` for the required configuration.
 
-## Project Structure
+## Screenshots
 
-- **config/**: configuration settings for the project.
-- **data/v1/**: Folder to store processed FAQ data as .csv (format based on chosen scraper)
-- **faq/**: Code for building and training the chatbot logic using LangChain, Pinecone and OpenAI
-    - **faq/scraper.py**: Code for scraping FAQs from the university website.
-- **main.py**: Streamlit application code to create the chatbot interface.
-- **logs/**: Directory to store log files generated by the application for debugging and error tracking.
-- **utils/**: folder with helper functions used in the project.
-- **requirements.txt**: Lists all project dependencies.
+- **Welcome Screen**  
+  ![Welcome Screen](screenshots/welcome_screen.png)
+
+- **Conversation Screen**  
+  ![Conversation Screen](screenshots/conversation_screen.png)
+
+- **Dark Theme Screen**  
+  ![Dark Theme Screen](screenshots/dark-theme.png)
+
+- **Collapsed Sidebar Screen**  
+  ![Collapsed Sidebar Screen](screenshots/collapse_sidebar.png)
 
 ## Author
 
-- Author : [Edward Mike](https://www.linkedin.com/in/edward-mike/)
+- **Edward Mike**  
+  [LinkedIn](https://www.linkedin.com/in/edward-mike/)
 
 ## Access the Chatbot
 
-You can access the FAQ Chatbot here: [Stirling Bot](https://stirling-bot.onrender.com)
+Access the FAQ Chatbot here: [Stirling Bot](https://stirling-bot.onrender.com)
