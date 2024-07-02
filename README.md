@@ -14,6 +14,9 @@ Access the FAQ Chatbot here: [Stirling Bot](https://stirling-bot.onrender.com)
 
 ## Technical Work
 
+### Architectural diagram
+![Architectural Diagram](screenshots/System-architecture-diagram.png)
+
 ### ETL Pipeline
 
 The project implements a robust ETL (Extraction, Transformation, Loading) pipeline to ensure dynamic data handling.
