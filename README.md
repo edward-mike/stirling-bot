@@ -2,14 +2,14 @@
 
 ## Introduction
 
-Stirling B🤖t is a sophisticated FAQ chatbot designed to address frequently asked questions (FAQs) related to the University of Stirling. It leverages advanced web scraping techniques to gather relevant information from the university's website and utilizes powerful Natural Language Processing (NLP) tools to answer user queries in a conversational manner.
+Stirling B🤖t is a sophisticated FAQ chatbot designed to address frequently asked questions (FAQs) related to the [University of Stirling](https://stirling-bot.onrender.com). It leverages advanced web scraping techniques to gather relevant information from the university's website and utilizes powerful Natural Language Processing (NLP) tools to answer user queries in a conversational manner.
 
 Access the FAQ Chatbot here: [Stirling Bot](https://stirling-bot.onrender.com)
 
 ## Project Goals
 
 - **Enhance User Experience**: Provide a convenient and readily accessible way to find university-related information.
-- **Showcase Technical Skills**: Demonstrate web scraping and NLP capabilities using Python libraries.
+- **Showcase Technical Skills**: Demonstrate web scraping, Large Language Model (LLM) and NLP capabilities using Python.
 - **Build an Interactive Interface**: Develop a Streamlit application for a seamless user experience.
 
 ## Technical Work
@@ -93,5 +93,6 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/edward-mike/)
 To all contributors of open source and free software used in this project, thank you👏
 
 ## Future Works
-- Multi-language support for all languages
-- Advanced LLM Evaluation
+- Implement Multi-language Support: Ensure the system can handle all languages.
+
+- Advanced LLM Evaluation: Develop more sophisticated methods for evaluating large language models.
