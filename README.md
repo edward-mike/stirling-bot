@@ -1,8 +1,8 @@
-# FAQ Chatbot 🤖 using Scraped Website Data from the University of Stirling 🚀
+# Stirling B🤖t is a Frequently Asked Questions (FAQ) ChatBot for the University of Stirling 🚀
 
 ## Introduction
 
-This project presents a user-friendly FAQ chatbot that addresses frequently asked questions (FAQs) related to your university. It leverages web scraping techniques to gather relevant information from the university's website and utilizes powerful NLP (Natural Language Processing) tools to answer user queries in a conversational manner.
+This project presents a user-friendly FAQ chatbot that addresses frequently asked questions (FAQs) related to university of stirling. It leverages web scraping techniques to gather relevant information from the university's website and utilizes powerful NLP (Natural Language Processing) tools to answer user queries in a conversational manner.
 
 ## Project Goals
 
@@ -15,16 +15,23 @@ This project presents a user-friendly FAQ chatbot that addresses frequently aske
 
 - **Python**: The foundational programming language for the entire project.
 - **Beautiful Soup**: To efficiently extract FAQ data from the university website.
+- **Requests**: Used to make HTTP requests to web pages or APIs, fetching HTML content or other data.
 - **LangChain**: A comprehensive NLP library for text processing, document management, and chatbot development.
 - **Pinecone**: A vector database for efficient text retrieval and search.
 - **OpenAI**: A large language model (LLM) for generating human-quality responses if additional conversational fluency is desired.
 - **Streamlit**: A framework for creating interactive web apps to present the chatbot interface.
+- **Pandas**: A framework for data manipulation and processing.
+- **PyPDF2**: Used to read and extract text from PDF documents.
+- **Isort**: Automatically sorts imports in Python files, maintaining a consistent and organized import structure.
+- **Black**: A code formatter that enforces a consistent coding style, making the codebase more readable and maintainable.
+- **Flake8**: A linting tool that checks for compliance with Python coding standards, ensuring the code is clean and free of common errors.
+- **Rich**: A library for rich text and formatting in the terminal, which can be used to enhance the command-line interface and debugging output with more readable and visually appealing formatting.
 
 
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/edward-mike/Stirling-FaQ-Bot.git`
+1. Clone this repository: `git clone https://github.com/edward-mike/multi-language-faq-chatbot.git`
 2. Create a virtual environment (recommended) and activate it.
 3. Install dependencies: `pip install -r requirements.txt` (Create a requirements.txt file listing all required libraries)
 4. Create .env file, see .env.example to know what you need.
