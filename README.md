@@ -4,6 +4,8 @@
 
 Stirling B🤖t is a sophisticated FAQ chatbot designed to address frequently asked questions (FAQs) related to the University of Stirling. It leverages advanced web scraping techniques to gather relevant information from the university's website and utilizes powerful Natural Language Processing (NLP) tools to answer user queries in a conversational manner.
 
+Access the FAQ Chatbot here: [Stirling Bot](https://stirling-bot.onrender.com)
+
 ## Project Goals
 
 - **Enhance User Experience**: Provide a convenient and readily accessible way to find university-related information.
@@ -82,6 +84,5 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
 - **Edward Mike**  
   [LinkedIn](https://www.linkedin.com/in/edward-mike/)
 
-## Access the Chatbot
-
-Access the FAQ Chatbot here: [Stirling Bot](https://stirling-bot.onrender.com)
+## Acknowledgements
+To all contributors of open source and free software used in this project, thank you👏
