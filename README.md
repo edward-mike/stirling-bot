@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Stirling B🤖t is a sophisticated FAQ chatbot designed to address frequently asked questions (FAQs) related to the [University of Stirling](https://stirling-bot.onrender.com). It leverages advanced web scraping techniques to gather relevant information from the university's website and utilizes powerful Natural Language Processing (NLP) tools to answer user queries in a conversational manner.
+Stirling B🤖t is a FAQ chatbot designed to address frequently asked questions (FAQs) related to the [University of Stirling](https://stirling-bot.onrender.com). It leverages advanced web scraping techniques to gather relevant information from the university's website, as well as extracting relevant information from PDF documents. Stirling B🤖t utilizes powerful Natural Language Processing (NLP) tools to answer user queries in a conversational manner, ensuring a seamless and informative experience.
 
 Access the FAQ Chatbot here: [Stirling Bot](https://stirling-bot.onrender.com)
 
