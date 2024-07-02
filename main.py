@@ -14,9 +14,15 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from streamlit_chat import message
 
-from config.settings import (CHUNK_OVERLAP, CHUNK_SIZE, DATA_DIR,
-                             DOCUMENTS_RETURN_COUNT, LOG_DIR, LOGO_URL,
-                             setup_logger)
+from config.settings import (
+    CHUNK_OVERLAP,
+    CHUNK_SIZE,
+    DATA_DIR,
+    DOCUMENTS_RETURN_COUNT,
+    LOG_DIR,
+    LOGO_URL,
+    setup_logger,
+)
 from new import run_new
 from utils import time_execution
 
@@ -163,7 +169,7 @@ def get_query_response(query: str = None):
 # StreamLit UI
 # StreamLit UI
 def main() -> None:
- 
+
     # Streamlit app
     st.set_page_config(page_title="Stirling FaQ-Bot", page_icon="🤖")
 

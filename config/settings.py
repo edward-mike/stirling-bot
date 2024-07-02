@@ -16,6 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Logging configuration
 ################################################################
 
+
 def setup_logger(log_directory, enable_console=False):
 
     class CustomFormatter(logging.Formatter):
