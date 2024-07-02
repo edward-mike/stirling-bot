@@ -30,7 +30,7 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
 - **Data Transformation**: Use GPT to transform the data into question-answer pairs.
 - **Data Storage**: Save the generated question-answer pairs in a CSV file.
 
-### Document Chunks and Embedding
+### Developing Large Language Model (LLM)
 
 - **Data Processing**: Chunk the processed CSV data and generate embeddings.
 - **Data Storage**: Load the embeddings into a vector database.
