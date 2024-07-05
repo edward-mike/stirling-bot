@@ -93,6 +93,12 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
     ```
 4. Create a `.env` file. Refer to `.env.example` for the required configuration.
 
+5. Run the app:
+    ```bash
+    streamlit run main.py
+    ```
+6. Copy and paste the Local URL: http://localhost:8501 on your browser
+
 ## Screenshots
 
 - **Welcome Screen**  
