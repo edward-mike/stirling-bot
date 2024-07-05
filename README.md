@@ -37,16 +37,40 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
 
 ## Technologies Used
 
-- **Python**: The core programming language for the entire project.
-- **Docker**: Facilitates the creation of containerized environments for consistent and reproducible deployment
+### Core Programming Language
+- **Python**: The backbone of the entire project, providing a versatile and powerful environment for development.
+
+### Environment and Deployment
+- **Docker**: Creates containerized environments for consistent and reproducible deployment.
+
+### Web Scraping and Data Extraction
 - **Beautiful Soup**: Efficiently extracts FAQ data from the university website.
-- **Requests**: Facilitates HTTP requests to web pages or APIs to fetch HTML content or other data.
+- **Requests**: Handles HTTP requests to web pages or APIs to fetch HTML content or other data.
+
+### Natural Language Processing and Machine Learning
 - **LangChain**: A comprehensive NLP library for text processing, document management, and chatbot development.
 - **Pinecone**: A vector database for efficient text retrieval and search.
+- **NLTK**: Natural Language Toolkit, useful for working with human language data.
 - **OpenAI**: Utilizes a large language model (LLM) to generate human-like responses for enhanced conversational fluency.
+
+### Evaluation Metrics
+- **Rouge**: A set of metrics for evaluating automatic summarization and machine translation.
+- **Bert_Score**: A metric for evaluating text generation models based on BERT embeddings.
+
+### Web Application Framework
 - **Streamlit**: A framework for creating interactive web apps to present the chatbot interface.
+
+### Data Manipulation and Visualization
 - **Pandas**: A powerful library for data manipulation and processing.
+- **Matplotlib**: A comprehensive library for creating static, animated, and interactive visualizations in Python.
+
+### Document Handling
 - **PyPDF2**: Reads and extracts text from PDF documents.
+
+### Configuration Management
+- **python-dotenv**: Manages environment variables, loading them from a `.env` file.
+
+### Code Quality and Formatting
 - **Isort**: Automatically sorts imports in Python files to maintain a consistent and organized import structure.
 - **Black**: Enforces a consistent coding style through automatic code formatting.
 - **Flake8**: Checks for compliance with Python coding standards, ensuring clean and error-free code.

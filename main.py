@@ -41,7 +41,6 @@ load_dotenv()
 # App configuration
 ########################################################################
 
-
 # 1. Load dataset
 # @st.cache_data
 def load_csv_file(file_path: str) -> List[str]:
