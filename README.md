@@ -97,7 +97,7 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
     ```bash
     streamlit run main.py
     ```
-6. Copy and paste the Local URL: http://localhost:8501 on your browser
+6. Copy and paste the local URL http://localhost:8501 into your browser
 
 ## Screenshots
 
