@@ -21,7 +21,7 @@ from config.settings import (
     DOCUMENTS_RETURN_COUNT,
     LOG_DIR,
     LOGO_URL,
-    setup_logger,
+    setup_logger
 )
 from new import run_new
 from utils import time_execution

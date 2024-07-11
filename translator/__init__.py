@@ -5,6 +5,7 @@
 import json
 import logging
 from typing import List, Tuple, Union
+from functools import lru_cache
 
 from langdetect import DetectorFactory, detect, detect_langs
 from langdetect.lang_detect_exception import LangDetectException
@@ -36,6 +37,7 @@ def detect_language(text: str) -> Tuple[str, Union[List[str], str]]:
         return "error", str(e)
 
 
+@lru_cache
 def load_files():
     languages = None
 
