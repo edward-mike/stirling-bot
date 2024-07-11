@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List, Tuple
 
 import streamlit as st
+from functools import lru_cache
 from dotenv import load_dotenv
 from langchain.chains.question_answering import load_qa_chain
 from langchain_community.document_loaders import CSVLoader
@@ -43,6 +44,7 @@ load_dotenv()
 
 # 1. Load dataset
 # @st.cache_data
+@lru_cache
 def load_csv_file(file_path: str) -> List[str]:
     try:
         loader = CSVLoader(file_path=file_path)
