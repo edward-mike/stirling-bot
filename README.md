@@ -11,6 +11,7 @@ Access the FAQ Chatbot here: [Stirling Bot](https://stirling-bot.onrender.com)
 - **Enhance User Experience**: Provide a convenient and readily accessible way to find university-related information.
 - **Showcase Technical Skills**: Demonstrate web scraping, Large Language Model (LLM) and NLP capabilities using Python.
 - **Build an Interactive Interface**: Develop a Streamlit application for a seamless user experience.
+- **Ensure Accuracy and High Performance**: Utilize Retrieval-Augmented Generation (RAG) techniques and advanced Language Model capabilities to deliver precise and efficient responses.
 
 ## Technical Work
 
