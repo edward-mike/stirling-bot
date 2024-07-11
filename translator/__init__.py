@@ -4,8 +4,8 @@
 
 import json
 import logging
-from typing import List, Tuple, Union
 from functools import lru_cache
+from typing import List, Tuple, Union
 
 from langdetect import DetectorFactory, detect, detect_langs
 from langdetect.lang_detect_exception import LangDetectException
