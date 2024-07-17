@@ -94,11 +94,13 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
     ```
 4. Create a `.env` file. Refer to `.env.example` for the required configuration.
 
-5. Run the app:
+5. Get API keys from [Pinecone](https://www.pinecone.io/) and  [Openai](https://www.openai.com/) 
+
+6. Run the app:
     ```bash
     streamlit run main.py
     ```
-6. Copy and paste the local URL http://localhost:8501 into your browser
+7. Copy and paste the local URL http://localhost:8501 into your browser
 
 ## Screenshots
 
