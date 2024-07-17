@@ -35,7 +35,6 @@ setup_logger(LOG_DIR)
 # extraction and processing
 run_new()
 
-# load .env VARIABLES
 load_dotenv()
 
 ########################################################################
@@ -44,7 +43,6 @@ load_dotenv()
 
 
 # 1. Load dataset
-# @st.cache_data
 @lru_cache
 def load_csv_file(file_path: str) -> List[str]:
     try:
@@ -53,7 +51,6 @@ def load_csv_file(file_path: str) -> List[str]:
     except (AttributeError, TypeError, RuntimeError) as e:
         logging.error(e)
         return []
-
 
 @time_execution
 def load_csv_data(data_directory: str) -> Tuple[List[str], int]:
@@ -76,10 +73,7 @@ def load_csv_data(data_directory: str) -> Tuple[List[str], int]:
             data_list.extend(future.result())
 
     return data_list, counts
-
-
 datasets, counts = load_csv_data(DATA_DIR)
-# print(f"files loaded = {counts}")
 
 # ########################################################################
 # https://python.langchain.com/v0.2/docs/how_to/recursive_text_splitter/
@@ -168,7 +162,6 @@ def get_query_response(query: str = None):
     return response.strip()
 
 
-# StreamLit UI
 # StreamLit UI
 def main() -> None:
 

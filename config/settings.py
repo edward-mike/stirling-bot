@@ -49,11 +49,12 @@ def setup_logger(log_directory, enable_console=False):
 # Directory to knowledge files
 ################################################################
 
-DATA_DIR = os.path.join(BASE_DIR, "data", "v1") # use v1 in Dev. and v2 in Prod.
+# use v1 in Dev. and v2 in Prod. (for large files, and delayed responses)
+DATA_DIR = os.path.join(BASE_DIR, "data", "v1") 
 WEBDATA_DIR = os.path.join(BASE_DIR, "data", "raw")
 PDFDATA_DIR = os.path.join(BASE_DIR, "data", "raw")
 PREDATA_DIR = os.path.join(BASE_DIR, "data", "preprocessed")
-LANGUAGES_PATH = os.path.join(BASE_DIR, "translator", "languages.json")
+LANGUAGES_FILE = os.path.join(BASE_DIR, "translator", "languages.json")
 
 URLS_FILE = os.path.join(BASE_DIR, "urls.txt")
 LOGO_URL = os.path.join(BASE_DIR, "static", "images", "logo.jpg")

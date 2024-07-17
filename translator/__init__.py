@@ -10,7 +10,7 @@ from typing import List, Tuple, Union
 from langdetect import DetectorFactory, detect, detect_langs
 from langdetect.lang_detect_exception import LangDetectException
 
-from config.settings import LANGUAGES_PATH, LOG_DIR, setup_logger
+from config.settings import LANGUAGES_FILE, LOG_DIR, setup_logger
 
 # setup logging
 setup_logger(LOG_DIR)
@@ -42,7 +42,7 @@ def load_files():
     languages = None
 
     if languages is None:
-        with open(LANGUAGES_PATH, "r", encoding="utf-8") as file:
+        with open(LANGUAGES_FILE, "r", encoding="utf-8") as file:
             languages = json.load(file)
         return languages
     return languages
