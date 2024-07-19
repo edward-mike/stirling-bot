@@ -2,6 +2,7 @@ import logging
 import os
 import warnings
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from configparser import ConfigParser
 from functools import lru_cache
 from typing import Any, Dict, List, Tuple
 
@@ -14,14 +15,8 @@ from langchain_openai import OpenAI, OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from streamlit_chat import message
-from configparser import ConfigParser
 
-from config.settings import (
-    DATA_DIR,
-    LOG_DIR,
-    LOGO_URL,
-    setup_logger,
-)
+from config.settings import DATA_DIR, LOG_DIR, LOGO_URL, setup_logger
 from new import run_new
 from utils import time_execution
 
@@ -53,6 +48,7 @@ def load_csv_file(file_path: str) -> List[str]:
         logging.error(e)
         return []
 
+
 @time_execution
 def load_csv_data(data_directory: str) -> Tuple[List[str], int]:
     data_list: List[str] = []
@@ -74,12 +70,15 @@ def load_csv_data(data_directory: str) -> Tuple[List[str], int]:
             data_list.extend(future.result())
 
     return data_list, counts
+
+
 datasets, counts = load_csv_data(DATA_DIR)
 
 # ########################################################################
 # https://python.langchain.com/v0.2/docs/how_to/recursive_text_splitter/
 
 conf = config["DEFAULT"]
+
 
 # 2. Splitting documents
 @time_execution
@@ -158,7 +157,9 @@ chain = load_qa_chain(llm, chain_type="stuff")
 @time_execution
 def get_query_response(query: str = None):
 
-    similar_docs = documents_search.similarity_search(query, k=int(conf["documents_return_count"]))
+    similar_docs = documents_search.similarity_search(
+        query, k=int(conf["documents_return_count"])
+    )
     response = chain.run(input_documents=similar_docs, question=query)
 
     return response.strip()

@@ -1,9 +1,7 @@
+from configparser import ConfigParser
 from typing import List
 
-from config.settings import (
-    # ALLOW_PDF_EXTRACTION,
-    # ALLOW_QA_GENERATOR,
-    # ALLOW_URL_EXTRACTION,
+from config.settings import (  # ALLOW_PDF_EXTRACTION,; ALLOW_QA_GENERATOR,; ALLOW_URL_EXTRACTION,
     PDF_DOC,
     PREDATA_DIR,
     URLS_FILE,
@@ -15,7 +13,6 @@ from pipeline import (
     preprocess_files,
 )
 
-from configparser import ConfigParser
 config = ConfigParser()
 config.read("config.ini")
 
@@ -32,15 +29,15 @@ def load_urls() -> List[str]:
 
 def run_new() -> None:
 
-    if config.getboolean("DEFAULT","enable_pdf_extraction"):
+    if config.getboolean("DEFAULT", "enable_pdf_extraction"):
         # Extract PDF files from given directory
         extract_text_from_pdfs_in_directory(PDF_DOC)
 
-    if config.getboolean("DEFAULT","enable_url_extraction"):
+    if config.getboolean("DEFAULT", "enable_url_extraction"):
         # Load URLs from the file and extract contents on stirling website.
         urls = load_urls()
         extract_contents_for(urls)
 
-    if config.getboolean("DEFAULT","enable_qa_generator"):
+    if config.getboolean("DEFAULT", "enable_qa_generator"):
         # Preprocess(clean text, structure contents, ..) files and create qa pairs with GPT
         preprocess_files(WEBDATA_DIR, PREDATA_DIR)
