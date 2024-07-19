@@ -5,8 +5,6 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from ._constants import *
-
 load_dotenv()
 
 # Build path inside the project directory
