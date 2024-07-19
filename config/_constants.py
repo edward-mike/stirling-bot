@@ -8,6 +8,6 @@ ALLOW_QA_GENERATOR = False  # Set to True to enable QA generation from extracted
 ################################################################
 # https://python.langchain.com/v0.2/docs/how_to/recursive_text_splitter/
 # App config.
-CHUNK_SIZE = 1000
-CHUNK_OVERLAP = 0
-DOCUMENTS_RETURN_COUNT = 5
+# CHUNK_SIZE = 1000
+# CHUNK_OVERLAP = 0
+# DOCUMENTS_RETURN_COUNT = 5

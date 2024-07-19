@@ -14,12 +14,10 @@ from langchain_openai import OpenAI, OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from streamlit_chat import message
+from configparser import ConfigParser
 
 from config.settings import (
-    CHUNK_OVERLAP,
-    CHUNK_SIZE,
     DATA_DIR,
-    DOCUMENTS_RETURN_COUNT,
     LOG_DIR,
     LOGO_URL,
     setup_logger,
@@ -28,6 +26,9 @@ from new import run_new
 from utils import time_execution
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
+
+config = ConfigParser()
+config.read("config.ini")
 
 # setup logging
 setup_logger(LOG_DIR)
@@ -78,13 +79,14 @@ datasets, counts = load_csv_data(DATA_DIR)
 # ########################################################################
 # https://python.langchain.com/v0.2/docs/how_to/recursive_text_splitter/
 
+conf = config["DEFAULT"]
 
 # 2. Splitting documents
 @time_execution
 def document_splitter(
     documents: List[str],
-    chunk_size: int = CHUNK_SIZE,
-    chunk_overlap: int = CHUNK_OVERLAP,
+    chunk_size: int = int(conf["chunk_size"]),
+    chunk_overlap: int = int(conf["chunk_overlap"]),
 ) -> List[List[str]]:
     text_splitter: RecursiveCharacterTextSplitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
@@ -156,7 +158,7 @@ chain = load_qa_chain(llm, chain_type="stuff")
 @time_execution
 def get_query_response(query: str = None):
 
-    similar_docs = documents_search.similarity_search(query, k=DOCUMENTS_RETURN_COUNT)
+    similar_docs = documents_search.similarity_search(query, k=int(conf["documents_return_count"]))
     response = chain.run(input_documents=similar_docs, question=query)
 
     return response.strip()
