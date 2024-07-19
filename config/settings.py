@@ -47,6 +47,7 @@ def setup_logger(log_directory, enable_console=False):
 # Directory to knowledge files
 ################################################################
 
+
 # use v1 in Dev. and v2 in Prod. (for large files, and delayed responses)
 DATA_DIR = os.path.join(BASE_DIR, "data", "v1")
 WEBDATA_DIR = os.path.join(BASE_DIR, "data", "raw")
