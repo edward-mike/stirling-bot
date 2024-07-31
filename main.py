@@ -16,7 +16,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from streamlit_chat import message
 
-from config.settings import DATA_DIR, LOG_DIR, LOGO_URL, setup_logger
+from config.settings import DATA_DIR, LOG_DIR, LOGO_URL, setup_logger, BotConfig
 from new import run_new
 from utils import time_execution
 
@@ -31,6 +31,7 @@ setup_logger(LOG_DIR)
 # extraction and processing
 run_new()
 
+# load environment variables
 load_dotenv()
 
 ########################################################################
@@ -38,7 +39,6 @@ load_dotenv()
 ########################################################################
 
 
-# 1. Load dataset
 @lru_cache
 def load_csv_file(file_path: str) -> List[str]:
     try:
@@ -74,6 +74,7 @@ def load_csv_data(data_directory: str) -> Tuple[List[str], int]:
 
 datasets, counts = load_csv_data(DATA_DIR)
 
+
 # ########################################################################
 # https://python.langchain.com/v0.2/docs/how_to/recursive_text_splitter/
 
@@ -100,6 +101,7 @@ def document_splitter(
 
 texts = document_splitter(datasets)
 
+print(texts)
 # ######################################################################
 
 
@@ -144,7 +146,6 @@ documents_search = lgPinecone.from_texts(
 
 # #######################################################################
 
-# Query Documents using OpenAI - in-Context LLM
 llm = OpenAI(
     temperature=os.environ["TEMPERATURE"], openai_api_key=os.environ["OPENAI_API_KEY"]
 )
@@ -153,7 +154,6 @@ chain = load_qa_chain(llm, chain_type="stuff")
 # ######################################################################
 
 
-# Query
 @time_execution
 def get_query_response(query: str = None):
 
@@ -165,13 +165,10 @@ def get_query_response(query: str = None):
     return response.strip()
 
 
-# StreamLit UI
 def main() -> None:
+    
+    st.set_page_config(page_title=f"{BotConfig.name} {BotConfig.page_sub_title}", page_icon=BotConfig.emoji)
 
-    # Streamlit app
-    st.set_page_config(page_title="Stirling FaQ-Bot", page_icon="🤖")
-
-    # Custom CSS
     st.markdown(
         """
         <style>
@@ -231,21 +228,20 @@ def main() -> None:
         unsafe_allow_html=True,
     )
 
-    # Apply CSS to the title with emoji
     st.markdown(
-        '<h1 class="title">Stirling <span class="title-bot">B🤖t</span></h1>',
+        f'<h1 class="title">{BotConfig.name} <span class="title-bot">B{BotConfig.emoji}t</span></h1>',
         unsafe_allow_html=True,
     )
 
     if "history" not in st.session_state:
         st.session_state.history = []
 
-    message("Hello, how may i help you?")
+    message(BotConfig.welcome_message)
 
     with st.sidebar:
-        # Logo
+        
         st.sidebar.image(LOGO_URL)
-        # Sidebar
+        
         st.sidebar.markdown(
             '<div class="st-emotion-cache-1cypcdb">', unsafe_allow_html=True
         )
@@ -255,7 +251,7 @@ def main() -> None:
         st.sidebar.markdown("</div>", unsafe_allow_html=True)
 
     if user_input:
-        with st.spinner("searching knowledgebase ..."):
+        with st.spinner(BotConfig.spinner_message):
             response = get_query_response(user_input)
         st.session_state.history.append({"user": user_input, "bot": response})
 

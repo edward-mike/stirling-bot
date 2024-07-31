@@ -60,3 +60,14 @@ LOGO_URL = os.path.join(BASE_DIR, "static", "images", "logo.jpg")
 
 PDF_DOC = "files"  # documents
 LOG_DIR = "logs"
+
+################################################################
+# ChatBot settings
+################################################################
+
+class BotConfig:
+    name = "Stirling" # title and also name of the bot
+    welcome_message = "Hello, how may i help you?" # bots welcome message for every new app load
+    emoji = "🤖" # bot emoji used - https://emojicopy.com/
+    spinner_message = "searching knowledgebase ..." # create a sense of searching
+    page_sub_title = "FaQ-Bot" # display on browser tab
