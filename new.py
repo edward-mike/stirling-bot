@@ -16,7 +16,7 @@ from pipeline import (
 config = ConfigParser()
 config.read("config.ini")
 
-# ToDO🤔:
+# ToDO🤔, Well, I have a life 😂. Never mind:
 # UnicodeError when preprocessing extracted pdf files with GPT
 # Maximum GPT token length error for large text extraction.
 
@@ -30,14 +30,11 @@ def load_urls() -> List[str]:
 def run_new() -> None:
 
     if config.getboolean("DEFAULT", "enable_pdf_extraction"):
-        # Extract PDF files from given directory
         extract_text_from_pdfs_in_directory(PDF_DOC)
 
     if config.getboolean("DEFAULT", "enable_url_extraction"):
-        # Load URLs from the file and extract contents on stirling website.
         urls = load_urls()
         extract_contents_for(urls)
 
     if config.getboolean("DEFAULT", "enable_qa_generator"):
-        # Preprocess(clean text, structure contents, ..) files and create qa pairs with GPT
         preprocess_files(WEBDATA_DIR, PREDATA_DIR)
