@@ -16,7 +16,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from streamlit_chat import message
 
-from config.settings import DATA_DIR, LOG_DIR, LOGO_URL, setup_logger, CSS_URL, BotConfig
+from config.settings import (CSS_URL, DATA_DIR, LOG_DIR, LOGO_URL, BotConfig,
+                             setup_logger)
 from new import run_new
 from utils import time_execution
 
@@ -81,7 +82,6 @@ datasets, counts = load_csv_data(DATA_DIR)
 conf = config["DEFAULT"]
 
 
-# 2. Splitting documents
 @time_execution
 def document_splitter(
     documents: List[str],
@@ -92,7 +92,6 @@ def document_splitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
     )
-    # Annotating create_documents method usage
     texts: List[str] = text_splitter.create_documents(
         [doc.page_content for doc in documents]
     )
@@ -111,6 +110,7 @@ embeddings = get_openai_embeddings()
 
 
 index_name = os.environ["INDEX_NAME"]
+
 
 # @st.cache_resource
 @time_execution
@@ -137,14 +137,11 @@ documents_search = lgPinecone.from_texts(
     [t.page_content for t in texts], embeddings, index_name=index_name
 )
 
-# #######################################################################
 
 llm = OpenAI(
     temperature=os.environ["TEMPERATURE"], openai_api_key=os.environ["OPENAI_API_KEY"]
 )
 chain = load_qa_chain(llm, chain_type="stuff")
-
-# ######################################################################
 
 
 @time_execution
@@ -159,8 +156,11 @@ def get_query_response(query: str = None):
 
 
 def main() -> None:
-    
-    st.set_page_config(page_title=f"{BotConfig.name} {BotConfig.page_sub_title}", page_icon=BotConfig.emoji)
+
+    st.set_page_config(
+        page_title=f"{BotConfig.name} {BotConfig.page_sub_title}",
+        page_icon=BotConfig.emoji,
+    )
 
     # adding custom css to streamlit
     with open(CSS_URL) as css_file:
@@ -177,9 +177,9 @@ def main() -> None:
     message(BotConfig.welcome_message)
 
     with st.sidebar:
-        
+
         st.sidebar.image(LOGO_URL)
-        
+
         st.sidebar.markdown(
             '<div class="st-emotion-cache-1cypcdb">', unsafe_allow_html=True
         )

@@ -2,16 +2,9 @@ from configparser import ConfigParser
 from typing import List
 
 from config.settings import (  # ALLOW_PDF_EXTRACTION,; ALLOW_QA_GENERATOR,; ALLOW_URL_EXTRACTION,
-    PDF_DOC,
-    PREDATA_DIR,
-    URLS_FILE,
-    WEBDATA_DIR,
-)
-from pipeline import (
-    extract_contents_for,
-    extract_text_from_pdfs_in_directory,
-    preprocess_files,
-)
+    PDF_DOC, PREDATA_DIR, URLS_FILE, WEBDATA_DIR)
+from pipeline import (extract_contents_for,
+                      extract_text_from_pdfs_in_directory, preprocess_files)
 
 config = ConfigParser()
 config.read("config.ini")

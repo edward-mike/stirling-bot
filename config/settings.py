@@ -2,8 +2,10 @@ import logging
 import os
 from datetime import datetime
 from pathlib import Path
-from pydantic.dataclasses import dataclass
+from typing import Optional
+
 from dotenv import load_dotenv
+from pydantic.dataclasses import dataclass
 
 load_dotenv()
 
@@ -67,14 +69,14 @@ CSS_URL = os.path.join(BASE_DIR, "static", "css", "app.css")
 # ChatBot settings
 ################################################################
 
-DEFAULT_MESSAGE = "Hello, how may i help you?" # bots welcome message for every new app load
-DEFAULT_SPINNER_MESSAGE = "searching knowledgebase ..." # create a sense of searching
+DEFAULT_MESSAGE = "Hello, how may i help you?"  # bots welcome message for every new app load
+DEFAULT_SPINNER_MESSAGE = "searching knowledgebase ..."  # create a sense of searching
 
-@dataclass()
+
+@dataclass
 class BotConfig:
-    name:str = "Stirling" # title and also name of the bot
-    page_sub_title:str = "FaQ-Bot" # display on browser tab
-    emoji:str = "🤖" # bot emoji used - https://emojicopy.com/
-    welcome_message:str = DEFAULT_MESSAGE 
-    spinner_message:str = DEFAULT_SPINNER_MESSAGE 
-
+    name: str = "Stirling"  # title and also name of the bot
+    page_sub_title: Optional[str] = "FaQ-Bot"  # display on browser tab
+    emoji: Optional[str] = "🤖"  # bot emoji used - https://emojicopy.com/
+    welcome_message: Optional[str] = DEFAULT_MESSAGE
+    spinner_message: Optional[str] = DEFAULT_SPINNER_MESSAGE
