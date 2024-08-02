@@ -119,6 +119,9 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
 - **LLM Evaluation output** 
   ![LLM Evaluation output](screenshots/sample-evaluation.png)
 
+- **Logging output** 
+  ![Logging output](screenshots/loggs.png)
+
 ## Author
 You can connect with me on [Linkedin](https://www.linkedin.com/in/edward-mike/)
 
