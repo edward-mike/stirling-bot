@@ -2,7 +2,7 @@ import logging
 import os
 from datetime import datetime
 from pathlib import Path
-
+from pydantic.dataclasses import dataclass
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -56,18 +56,25 @@ PREDATA_DIR = os.path.join(BASE_DIR, "data", "preprocessed")
 LANGUAGES_FILE = os.path.join(BASE_DIR, "translator", "languages.json")
 
 URLS_FILE = os.path.join(BASE_DIR, "urls.txt")
-LOGO_URL = os.path.join(BASE_DIR, "static", "images", "logo.jpg")
-
-PDF_DOC = "files"  # documents
+PDF_DOC = "files"
 LOG_DIR = "logs"
+
+# Static files
+LOGO_URL = os.path.join(BASE_DIR, "static", "images", "logo.jpg")
+CSS_URL = os.path.join(BASE_DIR, "static", "css", "app.css")
 
 ################################################################
 # ChatBot settings
 ################################################################
 
+DEFAULT_MESSAGE = "Hello, how may i help you?" # bots welcome message for every new app load
+DEFAULT_SPINNER_MESSAGE = "searching knowledgebase ..." # create a sense of searching
+
+@dataclass()
 class BotConfig:
-    name = "Stirling" # title and also name of the bot
-    welcome_message = "Hello, how may i help you?" # bots welcome message for every new app load
-    emoji = "🤖" # bot emoji used - https://emojicopy.com/
-    spinner_message = "searching knowledgebase ..." # create a sense of searching
-    page_sub_title = "FaQ-Bot" # display on browser tab
+    name:str = "Stirling" # title and also name of the bot
+    page_sub_title:str = "FaQ-Bot" # display on browser tab
+    emoji:str = "🤖" # bot emoji used - https://emojicopy.com/
+    welcome_message:str = DEFAULT_MESSAGE 
+    spinner_message:str = DEFAULT_SPINNER_MESSAGE 
+

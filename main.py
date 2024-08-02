@@ -16,7 +16,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from streamlit_chat import message
 
-from config.settings import DATA_DIR, LOG_DIR, LOGO_URL, setup_logger, BotConfig
+from config.settings import DATA_DIR, LOG_DIR, LOGO_URL, setup_logger, CSS_URL, BotConfig
 from new import run_new
 from utils import time_execution
 
@@ -101,11 +101,7 @@ def document_splitter(
 
 texts = document_splitter(datasets)
 
-print(texts)
-# ######################################################################
 
-
-# # 3. Creating embeddings
 def get_openai_embeddings():
     embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
     return embeddings
@@ -113,11 +109,8 @@ def get_openai_embeddings():
 
 embeddings = get_openai_embeddings()
 
-# #######################################################################
 
-# Storing embeddings in Pinecone
 index_name = os.environ["INDEX_NAME"]
-
 
 # @st.cache_resource
 @time_execution
@@ -169,64 +162,9 @@ def main() -> None:
     
     st.set_page_config(page_title=f"{BotConfig.name} {BotConfig.page_sub_title}", page_icon=BotConfig.emoji)
 
-    st.markdown(
-        """
-        <style>
-        
-            .title {
-                font-size: 3.8rem;
-                font-weight: bold;
-                color: #433b3b;
-                text-align: center;
-                margin-top: 20px;
-                margin-bottom: 1em;
-            }
-            
-            .title .title-bot {
-                color: #016839 !important;
-            }
-
-            /* Style for the sidebar */
-            .st-emotion-cache-1cypcdb {
-                background-color: #016938 !important;
-                margin-bottom: 3em;
-            }
-            
-            .st-emotion-cache-1v0mbdj {
-                margin: auto !important;
-            }
-            
-            .st-emotion-cache-1v0mbdj img {
-                height: 250px !important;
-            }
-            
-            .st-emotion-cache-l9bjmx p {
-                font-size: 16px !important;
-                color: #fbf9f9 !important;
-            }
-            
-            .st-emotion-cache-sh2krr p {
-                font-size: 16px !important;
-            }
-            
-            .eczjsme4 {
-                background-color: #016938 !important;
-            }
-            
-            .eczjsme11 {
-                background-color: #016938 !important;
-            }
-            
-            .st-emotion-cache-6qob1r{
-                box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.14), 
-                0 3px 1px -2px rgba(0, 0, 0, 0.42), 0 1px 5px 0 rgba(0, 0, 0, 0.52);
-
-            }
-        
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
+    # adding custom css to streamlit
+    with open(CSS_URL) as css_file:
+        st.markdown(f"<style>{css_file.read()}</style>", unsafe_allow_html=True)
 
     st.markdown(
         f'<h1 class="title">{BotConfig.name} <span class="title-bot">B{BotConfig.emoji}t</span></h1>',
