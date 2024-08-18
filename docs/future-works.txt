@@ -8,7 +8,7 @@
 # Get User feedback after using the application
 
 [3]
-# seperation of concerns: structure project properly
+# seperation of concerns: structure project properly in OOP - use a blend of dataclasses, and core python OOP
 
 [4]
 # make the entire project a python package, with easy setup and configurations with existing websites.
