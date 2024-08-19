@@ -19,7 +19,7 @@ from streamlit_chat import message
 from config.settings import (CSS_URL, DATA_DIR, LOG_DIR, LOGO_URL, BotConfig,
                              setup_logger)
 from new import run_new
-from utils import time_execution
+from utils import console_text_art, time_execution
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
@@ -200,4 +200,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    console_text_art()
     main()

@@ -69,7 +69,9 @@ CSS_URL = os.path.join(BASE_DIR, "static", "css", "app.css")
 # ChatBot settings
 ################################################################
 
-DEFAULT_MESSAGE = "Hello, how may i help you?"  # bots welcome message for every new app load
+DEFAULT_MESSAGE = (
+    "Hello, how may i help you?"  # bots welcome message for every new app load
+)
 DEFAULT_SPINNER_MESSAGE = "searching knowledgebase ..."  # create a sense of searching
 
 
@@ -80,3 +82,4 @@ class BotConfig:
     emoji: Optional[str] = "🤖"  # bot emoji used - https://emojicopy.com/
     welcome_message: Optional[str] = DEFAULT_MESSAGE
     spinner_message: Optional[str] = DEFAULT_SPINNER_MESSAGE
+    console_name: str = "Stirling Bot"
