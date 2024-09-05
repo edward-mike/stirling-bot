@@ -16,8 +16,14 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from streamlit_chat import message
 
-from config.settings import (CSS_URL, DATA_DIR, LOG_DIR, LOGO_URL, BotConfig,
-                             setup_logger)
+from config.settings import (
+    CSS_URL,
+    DATA_DIR,
+    LOG_DIR,
+    LOGO_URL,
+    BotConfig,
+    setup_logger,
+)
 from new import run_new
 from utils import console_text_art, time_execution
 
