@@ -41,6 +41,7 @@ run_new()
 # load environment variables
 load_dotenv()
 
+
 @lru_cache
 def load_csv_file(file_path: str) -> List[str]:
     try:
@@ -106,9 +107,7 @@ def get_openai_embeddings():
     embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
     return embeddings
 
-
 embeddings = get_openai_embeddings()
-
 
 index_name = os.environ["INDEX_NAME"]
 
