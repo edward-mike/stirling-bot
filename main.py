@@ -107,7 +107,9 @@ def get_openai_embeddings():
     embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
     return embeddings
 
+
 embeddings = get_openai_embeddings()
+
 
 index_name = os.environ["INDEX_NAME"]
 
