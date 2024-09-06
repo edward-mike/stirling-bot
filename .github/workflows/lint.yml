@@ -16,7 +16,18 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.12.1'  # Replace with your Python version
+        python-version: '3.12.1'
+
+        # Cache dependencies to speed up test job
+    - name: Cache Python packages
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cache/pip
+          ~/.local/lib/python3.12/site-packages
+        key: ${{ runner.os }}-python-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-python-
 
     - name: Install dependencies
       run: |
