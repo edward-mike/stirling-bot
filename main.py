@@ -41,11 +41,6 @@ run_new()
 # load environment variables
 load_dotenv()
 
-########################################################################
-# App configuration
-########################################################################
-
-
 @lru_cache
 def load_csv_file(file_path: str) -> List[str]:
     try:
