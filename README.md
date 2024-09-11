@@ -41,9 +41,6 @@ The project implements a robust ETL (Extraction, Transformation, Loading) pipeli
 ### Core Programming Language
 - **Python**: The backbone of the entire project, providing a versatile and powerful environment for development.
 
-### Environment and Deployment
-- **Docker**: Creates containerized environments for consistent and reproducible deployment.
-
 ### Web Scraping and Data Extraction
 - **Beautiful Soup**: Efficiently extracts FAQ data from the university website.
 - **Requests**: Handles HTTP requests to web pages or APIs to fetch HTML content or other data.
