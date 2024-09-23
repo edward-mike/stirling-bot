@@ -13,16 +13,16 @@ jobs:
     runs-on: ubuntu-latest 
 
     steps:
-    - name: Checkout code   # download code 
+    - name: 🛎️ Checkout   # download code 
       uses: actions/checkout@v3
 
-    - name: Set up Python   # install python
+    - name: 🐍 Set up Python   # install python
       uses: actions/setup-python@v4 
       with:
         python-version: '3.12.1'  
 
     # Cache dependencies to speed up test job
-    - name: Cache Python packages
+    - name: Cache Python packages on ubuntu 🐧
       uses: actions/cache@v3
       with:
         path: |
@@ -32,11 +32,11 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-python-
         
-    - name: Install dependencies # install dependencies
+    - name: 📦Install dependencies # install dependencies
       run: |
         python -m pip install --upgrade pip # first update pip `always update pip`
         pip install -r requirements.txt  # Install dependencies from requirements.txt
 
-    - name: Run tests
+    - name: 🧪Run tests
       run: |
         pytest tests/
